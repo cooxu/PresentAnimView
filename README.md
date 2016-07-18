@@ -3,7 +3,7 @@
 
 基础使用Demo：参考控制其中的代码
 
-1. 一个全局的队列，设置队列并发数，也就是将来想显示的列数
+一、 全局队列，设置队列并发数，也就是将来想显示的列数
 
 ```
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
@@ -12,7 +12,8 @@
 
 ``` 
 
-2. 在收到礼物消息的回调中遍历数据源，给自定义 AnimOperation 赋值
+
+二、 在收到礼物消息的回调中遍历数据源，给自定义 AnimOperation 赋值
 
 ```
 // 模拟收到礼物消息的回调
@@ -36,7 +37,7 @@
 
 ```
 
-3. 控制列数和每个动画 view 位置的可以在 AnimOperation.m 中修改
+三、 控制列数和每个动画 view 位置的可以在 AnimOperation.m 中修改
 ```
 _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 300 - (_index % 2) * 70, self.listView.frame.size.width / 2, 40);
 ```
