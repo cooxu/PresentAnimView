@@ -43,3 +43,6 @@ _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 300 - (_ind
 ```
 
 ![图片描述](http://upload-images.jianshu.io/upload_images/1441100-4103d8f46952ecf8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+思路： [简书](http://www.jianshu.com/p/119532a53dbd)
+
