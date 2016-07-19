@@ -25,7 +25,7 @@
             NSLog(@"%@",[self.giftInfos[i] name]);
             
             AnimOperation *op = [[AnimOperation alloc] init]; // 初始化操作
-            op.index = i; // 设置操作的 index
+            op.index = i; // 设置操作的 index，控制 View 的位置
             op.listView = self.view; // 要添加到的父视图
             op.model = self.giftInfos[i]; // 数据源
             [_queue addOperation:op];
