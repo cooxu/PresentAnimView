@@ -56,8 +56,14 @@
         
         _presentView = [[PresentView alloc] init];
         _presentView.model = _model;
+
         // i ％ 2 控制最多允许出现几行
-        _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 300 - (_index % 2) * 70, self.listView.frame.size.width / 2, 40);
+        if (_index % 2) {
+            _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 300, self.listView.frame.size.width / 2, 40);
+        }else {
+            _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 230, self.listView.frame.size.width / 2, 40);
+        }
+        
         _presentView.originFrame = _presentView.frame;
         [self.listView addSubview:_presentView];
     

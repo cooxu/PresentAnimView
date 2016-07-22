@@ -15,7 +15,8 @@
 
 @interface ViewController ()
 @property (nonatomic,strong) NSMutableArray *giftInfos; // 礼物模型数组
-@property (nonatomic,strong) NSOperationQueue *queue; // 全局动画队列
+@property (nonatomic,strong) NSOperationQueue *queue1; // 全局动画队列1
+@property (nonatomic,strong) NSOperationQueue *queue2; // 全局动画队列2
 @end
 
 @implementation ViewController
@@ -66,9 +67,13 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
 
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    queue.maxConcurrentOperationCount = 2; // 队列分发
-    _queue = queue;
+    NSOperationQueue *queue1 = [[NSOperationQueue alloc] init];
+    queue1.maxConcurrentOperationCount = 1; // 队列分发
+    _queue1 = queue1;
+    
+    NSOperationQueue *queue2 = [[NSOperationQueue alloc] init];
+    queue2.maxConcurrentOperationCount = 1; // 队列分发
+    _queue2 = queue2;
 
   
     
@@ -82,14 +87,29 @@
             
             NSLog(@"%@",[self.giftInfos[i] name]);
             
+            
+            
             AnimOperation *op = [[AnimOperation alloc] init]; // 初始化操作
-            op.index = i; // 设置操作的 index
-            op.listView = self.view; // 要添加到的父视图
-            op.model = self.giftInfos[i]; // 数据源
-            [_queue addOperation:op];
-         
+            op.listView = self.view;
+            
+            if (i % 2) {
+                op.model = self.giftInfos[i];
+                op.index = i;
+                if (op.model.giftCount != 0) {
+                    [_queue1 addOperation:op];
+                }
+            }else {
+                op.index = i;
+                op.model = self.giftInfos[i];
+                if (op.model.giftCount != 0) {
+                    [_queue2 addOperation:op];
+                }
+            }
+            
+            
         }
     }
+
     
 }
 
