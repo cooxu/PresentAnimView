@@ -86,9 +86,7 @@
         @autoreleasepool {
             
             NSLog(@"%@",[self.giftInfos[i] name]);
-            
-            
-            
+
             AnimOperation *op = [[AnimOperation alloc] init]; // 初始化操作
             op.listView = self.view;
             
@@ -105,12 +103,10 @@
                     [_queue2 addOperation:op];
                 }
             }
-            
-            
+ 
         }
     }
-
-    
+  
 }
 
 
