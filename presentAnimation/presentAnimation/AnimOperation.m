@@ -12,6 +12,7 @@
 @interface AnimOperation ()
 @property (nonatomic, getter = isFinished)  BOOL finished;
 @property (nonatomic, getter = isExecuting) BOOL executing;
+@property (nonatomic,copy) void(^finishedBlock)(BOOL result,NSInteger finishCount);
 @end
 
 
@@ -19,6 +20,14 @@
 
 @synthesize finished = _finished;
 @synthesize executing = _executing;
+
++ (instancetype)animOperationWithUserID:(NSString *)userID model:(GiftModel *)model finishedBlock:(void(^)(BOOL result,NSInteger finishCount))finishedBlock; {
+    AnimOperation *op = [[AnimOperation alloc] init];
+    op.presentView = [[PresentView alloc] init];
+    op.model = model;
+    op.finishedBlock = finishedBlock;
+    return op;
+}
 
 - (instancetype)init
 {
@@ -54,21 +63,22 @@
     
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         
-        _presentView = [[PresentView alloc] init];
+        
         _presentView.model = _model;
-
-        // i ％ 2 控制最多允许出现几行
-        if (_index % 2) {
-            _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 300, self.listView.frame.size.width / 2, 40);
-        }else {
-            _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 230, self.listView.frame.size.width / 2, 40);
-        }
+        
+//        // i ％ 2 控制最多允许出现几行
+//        if (_index % 2) {
+//             _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 300, self.listView.frame.size.width / 2, 40);
+//        }else {
+//             _presentView.frame = CGRectMake(-self.listView.frame.size.width / 2, 230, self.listView.frame.size.width / 2, 40);
+//        }
         
         _presentView.originFrame = _presentView.frame;
         [self.listView addSubview:_presentView];
-    
-        [self.presentView animateWithCompleteBlock:^(BOOL finished) {
+        
+        [self.presentView animateWithCompleteBlock:^(BOOL finished,NSInteger finishCount) {
             self.finished = finished;
+            self.finishedBlock(finished,finishCount);
         }];
 
     }];

@@ -10,15 +10,8 @@
 #import "ShakeLabel.h"
 #import "GiftModel.h"
 
-typedef NS_ENUM(NSInteger,PresentViewGiftType) {
-    // 送鲜花
-    PresentViewGiftTypeFlower,
-    // 送蘑菇
-    PresentViewGiftTypeMogu,
-    // 送房子
-    PresentViewGiftTypeHouse
-};
-typedef void(^completeBlock)(BOOL finished);
+
+typedef void(^completeBlock)(BOOL finished,NSInteger finishCount);
 
 @interface PresentView : UIView
 @property (nonatomic,strong) GiftModel *model;
@@ -31,8 +24,12 @@ typedef void(^completeBlock)(BOOL finished);
 @property (nonatomic,strong) ShakeLabel *skLabel;
 @property (nonatomic,assign) NSInteger animCount; // 动画执行到了第几次
 @property (nonatomic,assign) CGRect originFrame; // 记录原始坐标
+
 @property (nonatomic,assign,getter=isFinished) BOOL finished;
 - (void)animateWithCompleteBlock:(completeBlock)completed;
 
+
+- (void)shakeNumberLabel;
+- (void)hidePresendView;
 
 @end

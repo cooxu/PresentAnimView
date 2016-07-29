@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		310AFAE61D38B3BF008CDAB0 /* GiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 310AFAE51D38B3BF008CDAB0 /* GiftModel.m */; };
-		310AFAE91D38BAC3008CDAB0 /* AnimOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 310AFAE81D38BAC3008CDAB0 /* AnimOperation.m */; };
+		312028251D4B52DD008321BD /* AnimOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 312028241D4B52DD008321BD /* AnimOperationManager.m */; };
+		312028281D4B52E6008321BD /* GSPChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 312028271D4B52E6008321BD /* GSPChatMessage.m */; };
+		3120282D1D4B530C008321BD /* PresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120282A1D4B530C008321BD /* PresentView.m */; };
+		3120282E1D4B530C008321BD /* ShakeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3120282C1D4B530C008321BD /* ShakeLabel.m */; };
+		312028311D4B531A008321BD /* AnimOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 312028301D4B531A008321BD /* AnimOperation.m */; };
 		3165AFF91D378A8400ED199D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3165AFF81D378A8400ED199D /* main.m */; };
 		3165AFFC1D378A8400ED199D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3165AFFB1D378A8400ED199D /* AppDelegate.m */; };
 		3165AFFF1D378A8400ED199D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3165AFFE1D378A8400ED199D /* ViewController.m */; };
 		3165B0021D378A8400ED199D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3165B0001D378A8400ED199D /* Main.storyboard */; };
 		3165B0041D378A8400ED199D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3165B0031D378A8400ED199D /* Assets.xcassets */; };
 		3165B0071D378A8400ED199D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3165B0051D378A8400ED199D /* LaunchScreen.storyboard */; };
-		3165B0101D378B6700ED199D /* ShakeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3165B00F1D378B6700ED199D /* ShakeLabel.m */; };
-		3165B0131D37D7AA00ED199D /* PresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3165B0121D37D7AA00ED199D /* PresentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		310AFAE41D38B3BF008CDAB0 /* GiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftModel.h; sourceTree = "<group>"; };
 		310AFAE51D38B3BF008CDAB0 /* GiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftModel.m; sourceTree = "<group>"; };
-		310AFAE71D38BAC3008CDAB0 /* AnimOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimOperation.h; sourceTree = "<group>"; };
-		310AFAE81D38BAC3008CDAB0 /* AnimOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimOperation.m; sourceTree = "<group>"; };
+		312028231D4B52DD008321BD /* AnimOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimOperationManager.h; sourceTree = "<group>"; };
+		312028241D4B52DD008321BD /* AnimOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimOperationManager.m; sourceTree = "<group>"; };
+		312028261D4B52E6008321BD /* GSPChatMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPChatMessage.h; sourceTree = "<group>"; };
+		312028271D4B52E6008321BD /* GSPChatMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPChatMessage.m; sourceTree = "<group>"; };
+		312028291D4B530C008321BD /* PresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentView.h; sourceTree = "<group>"; };
+		3120282A1D4B530C008321BD /* PresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentView.m; sourceTree = "<group>"; };
+		3120282B1D4B530C008321BD /* ShakeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeLabel.h; sourceTree = "<group>"; };
+		3120282C1D4B530C008321BD /* ShakeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeLabel.m; sourceTree = "<group>"; };
+		3120282F1D4B531A008321BD /* AnimOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimOperation.h; sourceTree = "<group>"; };
+		312028301D4B531A008321BD /* AnimOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimOperation.m; sourceTree = "<group>"; };
 		3165AFF41D378A8400ED199D /* presentAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = presentAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3165AFF81D378A8400ED199D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3165AFFA1D378A8400ED199D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,10 +44,6 @@
 		3165B0031D378A8400ED199D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3165B0061D378A8400ED199D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3165B0081D378A8400ED199D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3165B00E1D378B6700ED199D /* ShakeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeLabel.h; sourceTree = "<group>"; };
-		3165B00F1D378B6700ED199D /* ShakeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeLabel.m; sourceTree = "<group>"; };
-		3165B0111D37D7AA00ED199D /* PresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentView.h; sourceTree = "<group>"; };
-		3165B0121D37D7AA00ED199D /* PresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312028321D4B5330008321BD /* presentView */ = {
+			isa = PBXGroup;
+			children = (
+				310AFAE41D38B3BF008CDAB0 /* GiftModel.h */,
+				310AFAE51D38B3BF008CDAB0 /* GiftModel.m */,
+				312028261D4B52E6008321BD /* GSPChatMessage.h */,
+				312028271D4B52E6008321BD /* GSPChatMessage.m */,
+				3120282B1D4B530C008321BD /* ShakeLabel.h */,
+				3120282C1D4B530C008321BD /* ShakeLabel.m */,
+				312028291D4B530C008321BD /* PresentView.h */,
+				3120282A1D4B530C008321BD /* PresentView.m */,
+				3120282F1D4B531A008321BD /* AnimOperation.h */,
+				312028301D4B531A008321BD /* AnimOperation.m */,
+				312028231D4B52DD008321BD /* AnimOperationManager.h */,
+				312028241D4B52DD008321BD /* AnimOperationManager.m */,
+			);
+			name = presentView;
+			sourceTree = "<group>";
+		};
 		3165AFEB1D378A8400ED199D = {
 			isa = PBXGroup;
 			children = (
@@ -70,18 +95,11 @@
 		3165AFF61D378A8400ED199D /* presentAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				312028321D4B5330008321BD /* presentView */,
 				3165AFFA1D378A8400ED199D /* AppDelegate.h */,
 				3165AFFB1D378A8400ED199D /* AppDelegate.m */,
 				3165AFFD1D378A8400ED199D /* ViewController.h */,
 				3165AFFE1D378A8400ED199D /* ViewController.m */,
-				310AFAE41D38B3BF008CDAB0 /* GiftModel.h */,
-				310AFAE51D38B3BF008CDAB0 /* GiftModel.m */,
-				3165B00E1D378B6700ED199D /* ShakeLabel.h */,
-				3165B00F1D378B6700ED199D /* ShakeLabel.m */,
-				3165B0111D37D7AA00ED199D /* PresentView.h */,
-				3165B0121D37D7AA00ED199D /* PresentView.m */,
-				310AFAE71D38BAC3008CDAB0 /* AnimOperation.h */,
-				310AFAE81D38BAC3008CDAB0 /* AnimOperation.m */,
 				3165B0001D378A8400ED199D /* Main.storyboard */,
 				3165B0031D378A8400ED199D /* Assets.xcassets */,
 				3165B0051D378A8400ED199D /* LaunchScreen.storyboard */,
@@ -170,13 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310AFAE91D38BAC3008CDAB0 /* AnimOperation.m in Sources */,
-				3165B0131D37D7AA00ED199D /* PresentView.m in Sources */,
+				312028281D4B52E6008321BD /* GSPChatMessage.m in Sources */,
+				312028251D4B52DD008321BD /* AnimOperationManager.m in Sources */,
 				310AFAE61D38B3BF008CDAB0 /* GiftModel.m in Sources */,
+				3120282E1D4B530C008321BD /* ShakeLabel.m in Sources */,
+				3120282D1D4B530C008321BD /* PresentView.m in Sources */,
 				3165AFFF1D378A8400ED199D /* ViewController.m in Sources */,
 				3165AFFC1D378A8400ED199D /* AppDelegate.m in Sources */,
+				312028311D4B531A008321BD /* AnimOperation.m in Sources */,
 				3165AFF91D378A8400ED199D /* main.m in Sources */,
-				3165B0101D378B6700ED199D /* ShakeLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
