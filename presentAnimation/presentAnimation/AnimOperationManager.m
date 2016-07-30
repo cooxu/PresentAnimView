@@ -15,7 +15,7 @@
 /// 队列2
 @property (nonatomic,strong) NSOperationQueue *queue2;
 
-/// 操作缓冲池
+/// 操作缓存池
 @property (nonatomic,strong) NSCache *operationCache;
 /// 维护用户礼物信息
 @property (nonatomic,strong) NSCache *userGigtInfos;

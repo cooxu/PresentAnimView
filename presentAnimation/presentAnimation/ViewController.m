@@ -33,7 +33,7 @@
     GSPChatMessage *msg = [[GSPChatMessage alloc] init];
     msg.text = @"1个【鲜花】";
     // 模拟 n 个人在送礼物
-    int x = arc4random() % 3;
+    int x = arc4random() % 9;
     msg.senderChatID = [NSString stringWithFormat:@"%d",x];
     msg.senderName = msg.senderChatID;
     NSLog(@"id %@ -------送了1个【鲜花】--------",msg.senderChatID);
